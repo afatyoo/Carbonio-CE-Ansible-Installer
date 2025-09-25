@@ -39,7 +39,7 @@ ansible-playbook /zxbot/carbonio_install/playbooks/carbonio_install.yml -i inven
 ----
 
 * *Wait for Completion*  
-The installation process will run automatically.  
+The upgrade process will run automatically.  
 Please make sure your connection is stable and the target servers meet the required specifications.
 
 For detailed guidance, check this article:
