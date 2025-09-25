@@ -1,4 +1,4 @@
-= Carbonio CE Ansible Installer
+= Carbonio CE Ansible Installer + Upgrade
 :toc:
 :icons: font
 :source-highlighter: coderay
@@ -20,7 +20,7 @@ Prepare an inventory file (e.g., `inventoryname`) and adjust it according to you
 For detailed guidance, check this article:  
 👉 https://afatyo.web.id/menyiapkan-inventory-carbonio-dengan-ansible/[Preparing an Inventory for Carbonio with Ansible] +
 
-* *Run the Playbook*  
+* *Instalation Command*  
 Execute the following command to start the installation:
 
 [source,bash]
@@ -31,6 +31,19 @@ ansible-playbook /zxbot/carbonio_install/playbooks/carbonio_install.yml -i inven
 * *Wait for Completion*  
 The installation process will run automatically.  
 Please make sure your connection is stable and the target servers meet the required specifications.
+
+* *Upgrade Command*  
+Execute the following command to start the upgrade:
+----
+ansible-playbook /zxbot/carbonio_install/playbooks/carbonio_install.yml -i inventoryname -u root
+----
+
+* *Wait for Completion*  
+The installation process will run automatically.  
+Please make sure your connection is stable and the target servers meet the required specifications.
+
+For detailed guidance, check this article:
+👉 https://afatyo.web.id/upgrade-patching-carbonio-ansible/[Tips for Upgrading Carbonio Via Ansible] +
 
 == 📌 Example Inventory
 
