@@ -1,7 +1,8 @@
 = Carbonio CE Ansible Installer + Upgrade
 
-This repository contains *Ansible code* to automatically install *Carbonio CE*.
-The playbook simplifies and speeds up the installation process by making it consistent and less error-prone.
+
+This repository contains *Ansible code* to automatically install and upgrade *Carbonio CE*.  
+The playbook simplifies and speeds up the process by making it consistent and less error-prone.
 
 == 📋 Requirements
 
@@ -17,8 +18,14 @@ Prepare an inventory file (e.g., `inventoryname`) and adjust it according to you
 For detailed guidance, check this article:  
 👉 https://afatyo.web.id/menyiapkan-inventory-carbonio-dengan-ansible/[Preparing an Inventory for Carbonio with Ansible] +
 
-* *Instalation Command*  
-Execute the following command to start the installation:
+* *Installation Command*  
+
+[source,bash]
+----
+ansible-playbook /zxbot/carbonio_install/playbooks/carbonio_install.yml -i inventoryname -u root
+----
+
+* *Upgrade Command*  
 
 [source,bash]
 ----
@@ -26,20 +33,10 @@ ansible-playbook /zxbot/carbonio_install/playbooks/carbonio_install.yml -i inven
 ----
 
 * *Wait for Completion*  
-The installation process will run automatically.  
-Please make sure your connection is stable and the target servers meet the required specifications.
+The process will run automatically.  
+Please make sure your connection is stable and the target servers meet the required specifications.  
 
-* *Upgrade Command*  
-Execute the following command to start the upgrade:
-----
-ansible-playbook /zxbot/carbonio_install/playbooks/carbonio_install.yml -i inventoryname -u root
-----
-
-* *Wait for Completion*  
-The upgrade process will run automatically.  
-Please make sure your connection is stable and the target servers meet the required specifications.
-
-For detailed guidance, check this article:
+For detailed guidance, check this article:  
 👉 https://afatyo.web.id/upgrade-patching-carbonio-ansible/[Tips for Upgrading Carbonio Via Ansible] +
 
 == 📌 Example Inventory
@@ -77,7 +74,6 @@ Adjust the hosts according to your environment.
 == 📝 License
 
 This project is released under the *GPL-3.0-only* license.  
-You are free to use, modify, and distribute it under the terms of this license.
+You are free to use, modify, and distribute it under the terms of this license.  
 
-See the link:https://github.com/afatyoo/script-master/blob/main/Directory%20Ansible%20Carbonio%20CE%20Install/LICENSE[LICENSE] file for details.
-
+See the link:LICENSE[LICENSE] file for details.
