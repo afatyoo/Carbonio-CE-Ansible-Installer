@@ -29,7 +29,7 @@ ansible-playbook /zxbot/carbonio_install/playbooks/carbonio_install.yml -i inven
 
 [source,bash]
 ----
-ansible-playbook /zxbot/carbonio_install/playbooks/carbonio_install.yml -i inventoryname -u root
+ansible-playbook /zxbot/carbonio_install/playbooks/carbonio_upgrade.yml -i inventoryname -u root
 ----
 
 * *Wait for Completion*  
