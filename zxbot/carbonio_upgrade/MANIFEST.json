@@ -1,0 +1,36 @@
+{
+ "collection_info": {
+  "namespace": "zxbot",
+  "name": "carbonio_upgrade",
+  "version": "25.6.1",
+  "authors": [
+   "zextras-mobius <mobius@zextras.com>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "zextras",
+   "carbonio"
+  ],
+  "description": "Collection to upgrade Carbonio",
+  "license": [
+   "GPL-3.0-only"
+  ],
+  "license_file": null,
+  "dependencies": {
+   "community.postgresql": ">=3.4.0",
+   "ansible.posix": ">=1.5.4"
+  },
+  "repository": "https://github.com/zextras/carbonio-upgrade-ansible",
+  "documentation": "https://docs.zextras.com/carbonio/html/index.html",
+  "homepage": "https://zextras.com/",
+  "issues": null
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "3ff8007cec095f60ad139eef890b0dd0c3804993d476d0cd9ce55e2598fa092a",
+  "format": 1
+ },
+ "format": 1
+}

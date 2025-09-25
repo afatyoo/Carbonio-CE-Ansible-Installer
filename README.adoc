@@ -1,0 +1,73 @@
+= Carbonio CE Ansible Installer
+:toc:
+:icons: font
+:source-highlighter: coderay
+
+This repository contains *Ansible code* to automatically install *Carbonio CE*.
+The playbook simplifies and speeds up the installation process by making it consistent and less error-prone.
+
+== 📋 Requirements
+
+* *Ansible* installed on the control machine.
+* SSH access to the target server using `root` or a user with sudo privileges.
+* A properly configured *inventory file* for your nodes.
+
+== ⚙️ Usage
+
+* *Edit the Inventory*  
+Prepare an inventory file (e.g., `inventoryname`) and adjust it according to your node setup. +
+
+For detailed guidance, check this article:  
+👉 https://afatyo.web.id/menyiapkan-inventory-carbonio-dengan-ansible/[Preparing an Inventory for Carbonio with Ansible] +
+
+* *Run the Playbook*  
+Execute the following command to start the installation:
+
+[source,bash]
+----
+ansible-playbook /zxbot/carbonio_install/playbooks/carbonio_install.yml -i inventoryname -u root
+----
+
+* *Wait for Completion*  
+The installation process will run automatically.  
+Please make sure your connection is stable and the target servers meet the required specifications.
+
+== 📌 Example Inventory
+
+Here’s a simple example of how an inventory file might look:
+
+[source,ini]
+----
+[carbonio_mta]
+mail1.example.com
+
+[carbonio_proxy]
+proxy1.example.com
+
+[carbonio_db]
+db1.example.com
+
+[carbonio_app]
+app1.example.com
+----
+
+Adjust the hosts according to your environment.
+
+== 📌 Notes
+
+* Double-check your inventory file before running the playbook.  
+* If an error occurs, verify your SSH connection and Ansible configuration.  
+* This playbook is designed for *Carbonio CE* (Community Edition).  
+
+== 👨‍💻 Credits
+
+* *Original code by*: https://www.zextras.com[Zextras Group]  
+* *Edited and customized by*: https://afatyo.web.id[afatyo]  
+
+== 📝 License
+
+This project is released under the *GPL-3.0-only* license.  
+You are free to use, modify, and distribute it under the terms of this license.
+
+See the link:https://github.com/afatyoo/script-master/blob/main/Directory%20Ansible%20Carbonio%20CE%20Install/LICENSE[LICENSE] file for details.
+

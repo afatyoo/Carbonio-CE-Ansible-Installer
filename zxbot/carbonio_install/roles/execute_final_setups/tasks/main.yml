@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2024 Zextras <https://www.zextras.com>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+---
+# tasks file for execute-pending-setups
+  - import_tasks: execute-carbonio-pending-setups.yml
+  - import_tasks: execute-post-install-cmds.yml
+  - import_tasks: execute-dbconnectors-bootstrap.yml
+  - import_tasks: restart-carbonio-appserver.yml
+  - import_tasks: configure-wsc.yml
+  - import_tasks: configure-videoserver.yml
+  - import_tasks: execute-config-fixes.yml

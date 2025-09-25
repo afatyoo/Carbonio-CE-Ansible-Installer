@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# SPDX-FileCopyrightText: 2024 Zextras <https://www.zextras.com>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+if [ $# -ne 1 ]; then
+        echo "${0} Service Discover Password"
+        exit 1
+fi
+
+export CONSUL_HTTP_TOKEN=$(echo $1| gpg --batch --yes --passphrase-fd 0 -qdo - /etc/zextras/service-discover/cluster-credentials.tar.gpg | tar xOf - consul-acl-secret.json | jq .SecretID -r);
+export SETUP_CONSUL_TOKEN=$(echo $1 | gpg --batch --yes --passphrase-fd 0 -qdo - /etc/zextras/service-discover/cluster-credentials.tar.gpg | tar xOf - consul-acl-secret.json | jq .SecretID -r);
+pending-setups -a
+
+{% if ansible_distribution_major_version == "9" or ansible_distribution_major_version == "24" %}
+systemctl restart carbonio.target
+{% else %}
+su - zextras -c "/opt/zextras/bin/zmcontrol restart"
+{% endif %}

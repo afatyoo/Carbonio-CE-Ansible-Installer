@@ -1,0 +1,236 @@
+# SPDX-FileCopyrightText: 2024 Zextras <https://www.zextras.com>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+---
+# vars file for install-carbonio-packages
+
+
+  appserver_packages: 
+    - carbonio-appserver
+    # (hapus carbonio-zal, carbonio-advanced → gak ada di CE)
+  
+  carbonio_storages_packages: 
+    - carbonio-storages-ce   # ganti dari carbonio-storages
+
+  carbonio_user_management_packages: 
+    - carbonio-user-management
+
+  mailbox_dbconnectors_packages: 
+    - carbonio-mailbox-db
+    
+  files_dbconnectors_packages: 
+    - carbonio-files-db
+
+  docs_dbconnectors_packages: 
+    - carbonio-docs-connector-db
+
+  task_dbconnectors_packages:
+    - carbonio-tasks-db
+
+  message_dispatcher_dbconnectors_packages:
+    - carbonio-message-dispatcher-db
+
+  ws_collaboration_dbconnectors_packages:
+    - carbonio-ws-collaboration-db
+
+  notification_push_dbconnectors_packages:
+    # dihapus → tidak ada di CE
+
+  postgres_packages_ubuntu: 
+    - python3-psycopg2
+    - postgresql-16
+
+  postgres_packages_rhel: 
+    - python3-psycopg2
+    - postgresql16-server
+    
+  ds_packages: 
+    - carbonio-directory-server
+
+  mta_packages: 
+    - carbonio-mta
+    
+  proxy_packages: 
+    - carbonio-catalog
+    - carbonio-proxy
+    - carbonio-webui
+    # (hapus carbonio-admin-ui, carbonio-admin-console-ui, carbonio-avdb-updater → gak ada di CE)
+
+  preview_packages: 
+    - carbonio-preview-ce   # ganti dari carbonio-preview
+
+  task_packages:
+    - carbonio-tasks-ce     # ganti dari carbonio-tasks
+    
+  files_packages: 
+    - carbonio-files-ce     # ganti dari carbonio-files  
+    
+  files_ui_packages: 
+    - carbonio-files-public-folder-ui
+    - carbonio-files-ui
+  
+  task_ui_packages:
+      - carbonio-tasks-ui
+  
+  ws_ui_packages:
+    - carbonio-ws-collaboration-ui
+
+  docs_packages: 
+    - carbonio-docs-editor
+    - carbonio-docs-connector-ce   # ganti dari carbonio-docs-connector
+  
+  videoserver_packages: 
+    - carbonio-videoserver-ce      # ganti dari carbonio-videoserver-advanced, hapus carbonio-videorecorder
+
+  workstream_packages:
+    - carbonio-ws-collaboration-ce # ganti dari carbonio-ws-collaboration
+
+  message_dispatcher_packages:
+    - carbonio-message-dispatcher-ce # ganti dari carbonio-message-dispatcher
+
+  notification_push_packages:
+    # dihapus → tidak ada di CE
+
+  postgres_clent_package_ubuntu:
+    - postgresql-client-16
+
+  postgres_clent_package_rhel:
+    - postgresql16
+
+  sda_packages: 
+    - service-discover-agent    
+    
+  sds_packages: 
+    - service-discover-server
+    
+  prometheus_packages: 
+    - carbonio-prometheus
+
+  message_broker_packages:
+    - carbonio-message-broker
+
+  grafana_packages:
+    - grafana 
+
+  syslog_packages:
+    - carbonio-pflogsumm
+    - carbonio-perl-mailtools
+
+
+#  appserver_packages: 
+#    - carbonio-appserver
+#    - carbonio-zal
+#    - carbonio-advanced
+#  
+#  carbonio_storages_packages: 
+#    - carbonio-storages
+#
+#  carbonio_user_management_packages: 
+#    - carbonio-user-management
+#
+#  mailbox_dbconnectors_packages: 
+#    - carbonio-mailbox-db
+#    
+#  files_dbconnectors_packages: 
+#    - carbonio-files-db
+#
+#  docs_dbconnectors_packages: 
+#    - carbonio-docs-connector-db
+#
+#  task_dbconnectors_packages:
+#    - carbonio-tasks-db
+#
+#  message_dispatcher_dbconnectors_packages:
+#    - carbonio-message-dispatcher-db
+#
+#  ws_collaboration_dbconnectors_packages:
+#    - carbonio-ws-collaboration-db
+#
+#  notification_push_dbconnectors_packages:
+#    - carbonio-notification-push-db
+#
+#  postgres_packages_ubuntu: 
+#    - python3-psycopg2
+#    - postgresql-16
+#
+#  postgres_packages_rhel: 
+#    - python3-psycopg2
+#    - postgresql16-server
+#    
+#  ds_packages: 
+#    - carbonio-directory-server
+#
+#  mta_packages: 
+#    - carbonio-mta
+#    
+#  proxy_packages: 
+#    - carbonio-catalog
+#    - carbonio-proxy
+#    - carbonio-webui
+#    - carbonio-admin-ui
+#    - carbonio-admin-console-ui
+#    - carbonio-avdb-updater
+#
+#  preview_packages: 
+#    - carbonio-preview
+#    - carbonio-docs-editor
+#
+#  task_packages:
+#    - carbonio-tasks
+#    
+#  files_packages: 
+#    - carbonio-files  
+#    
+#  files_ui_packages: 
+#    - carbonio-files-public-folder-ui
+#    - carbonio-files-ui
+#  
+#  task_ui_packages:
+#      - carbonio-tasks-ui
+#  
+#  ws_ui_packages:
+#    - carbonio-ws-collaboration-ui
+#
+#  docs_packages: 
+#    - carbonio-docs-editor
+#    - carbonio-docs-connector
+#  
+#  videoserver_packages: 
+#    - carbonio-videoserver-advanced
+#    - carbonio-videorecorder
+#
+#  workstream_packages:
+#    - carbonio-ws-collaboration
+#
+#  message_dispatcher_packages:
+#    - carbonio-message-dispatcher
+#
+#  notification_push_packages:
+#    - carbonio-notification-push
+#    - carbonio-push-connector
+#
+#  postgres_clent_package_ubuntu:
+#    - postgresql-client-16
+#
+#  postgres_clent_package_rhel:
+#    - postgresql16
+#
+#  sda_packages: 
+#    - service-discover-agent    
+#    
+#  sds_packages: 
+#    - service-discover-server
+#    
+#  prometheus_packages: 
+#    - carbonio-prometheus
+#
+#  message_broker_packages:
+#    - carbonio-message-broker
+#
+#  grafana_packages:
+#    - grafana 
+#
+#  syslog_packages:
+#    - carbonio-pflogsumm
+#    - carbonio-perl-mailtools

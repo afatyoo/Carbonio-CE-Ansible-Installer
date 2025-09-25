@@ -1,0 +1,36 @@
+{
+ "collection_info": {
+  "namespace": "zxbot",
+  "name": "carbonio_install",
+  "version": "25.6.0",
+  "authors": [
+   "zextras-mobius <mobius@zextras.com>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "zextras",
+   "carbonio"
+  ],
+  "description": "Collection to install Carbonio",
+  "license": [
+   "GPL-3.0-only"
+  ],
+  "license_file": null,
+  "dependencies": {
+   "community.postgresql": ">=3.4.0",
+   "ansible.posix": ">=1.5.4"
+  },
+  "repository": "https://github.com/zextras/carbonio-install-ansible",
+  "documentation": "https://docs.zextras.com/carbonio/html/index.html",
+  "homepage": "https://zextras.com/",
+  "issues": null
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "911685098e2c692dd8a337b795eeb29802c57cc472b9a3887f4e27b65f9d996b",
+  "format": 1
+ },
+ "format": 1
+}
