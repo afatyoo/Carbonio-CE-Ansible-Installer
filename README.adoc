@@ -1,7 +1,4 @@
 = Carbonio CE Ansible Installer + Upgrade
-:toc:
-:icons: font
-:source-highlighter: coderay
 
 This repository contains *Ansible code* to automatically install *Carbonio CE*.
 The playbook simplifies and speeds up the installation process by making it consistent and less error-prone.
