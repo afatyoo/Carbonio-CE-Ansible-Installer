@@ -4,19 +4,19 @@
 This repository contains *Ansible code* to automatically install and upgrade *Carbonio CE*.  
 The playbook simplifies and speeds up the process by making it consistent and less error-prone.
 
-== 📋 Requirements
+== Requirements
 
 * *Ansible* installed on the control machine.
 * SSH access to the target server using `root` or a user with sudo privileges.
 * A properly configured *inventory file* for your nodes.
 
-== ⚙️ Usage
+==  Usage
 
 * *Edit the Inventory*  
 Prepare an inventory file (e.g., `inventoryname`) and adjust it according to your node setup. +
 
 For detailed guidance, check this article:  
-👉 https://afatyo.web.id/menyiapkan-inventory-carbonio-dengan-ansible/[Preparing an Inventory for Carbonio with Ansible] +
+https://afatyo.web.id/menyiapkan-inventory-carbonio-dengan-ansible/[Preparing an Inventory for Carbonio with Ansible] +
 
 * *Installation Command*  
 
@@ -37,9 +37,9 @@ The process will run automatically.
 Please make sure your connection is stable and the target servers meet the required specifications.  
 
 For detailed guidance, check this article:  
-👉 https://afatyo.web.id/upgrade-patching-carbonio-ansible/[Tips for Upgrading Carbonio Via Ansible] +
+https://afatyo.web.id/upgrade-patching-carbonio-ansible/[Tips for Upgrading Carbonio Via Ansible] +
 
-== 📌 Example Inventory
+== Example Inventory
 
 Here’s a simple example of how an inventory file might look:
 
@@ -60,18 +60,18 @@ app1.example.com
 
 Adjust the hosts according to your environment.
 
-== 📌 Notes
+== Notes
 
 * Double-check your inventory file before running the playbook.  
 * If an error occurs, verify your SSH connection and Ansible configuration.  
 * This playbook is designed for *Carbonio CE* (Community Edition).  
 
-== 👨‍💻 Credits
+== Credits
 
 * *Original code by*: https://www.zextras.com[Zextras Group]  
 * *Edited and customized by*: https://afatyo.web.id[afatyo]  
 
-== 📝 License
+== License
 
 This project is released under the *GPL-3.0-only* license.  
 You are free to use, modify, and distribute it under the terms of this license.  
