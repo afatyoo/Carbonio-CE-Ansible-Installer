@@ -9,6 +9,7 @@ The playbook simplifies and speeds up the process by making it consistent and le
 * *Ansible* installed on the control machine.
 * SSH access to the target server using `root` or a user with sudo privileges.
 * A properly configured *inventory file* for your nodes.
+* Support for Ubuntu 22/24 (RHEL 8/9 still testing(
 
 ==  Usage
 
