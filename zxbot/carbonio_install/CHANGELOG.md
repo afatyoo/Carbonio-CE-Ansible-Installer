@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Change 
 * Change the list package to Carbonio CE
+* Only support for Ubuntu 22/24
 
 
 
