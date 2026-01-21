@@ -49,7 +49,7 @@
       
   - name: Reconfigure preview memcache
     replace:
-      path: /etc/carbonio/preview/config.ini
+      path: /etc/carbonio/preview/messages.ini
       regexp: "127.0.0.1:11211"
       replace: "{{ hostvars[groups['proxyServers'][0]].inventory_hostname }}:11211"
     notify:  restart_preview
@@ -59,7 +59,7 @@
       
   - name: Reconfigure preview lookup handler
     replace:
-      path: /etc/carbonio/preview/config.ini
+      path: /etc/carbonio/preview/messages.ini
       regexp: "127.0.0.1:7072"
       replace: "{{ hostvars[groups['applicationServers'][0]].inventory_hostname }}:7072"
     notify:  restart_preview
