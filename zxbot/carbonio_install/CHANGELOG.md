@@ -2,12 +2,66 @@
 
 All notable changes to this project will be documented in this file. 
 
-### [25.6.1] (2025-09-25)
 
-### Change 
-* Change the list package to Carbonio CE
-* Only support for Ubuntu 22/24
+### [26.3.1] (2026-03-24)
 
+
+### Bug Fixes
+* Fixed an issue where inline comments in inventory variable examples were propagated as part of the value into generated configuration files, causing invalid Postfix configuration
+
+
+### [26.3.0] (2026-03-11)
+
+
+### Features
+* Added support for defining a custom default domain in the inventory file under the [masterDirectoryServers:vars] group during installation.
+* Added new DBConnector - carbonio-videorecorder-db
+* Optimized docs-editor deployment: it is no longer installed on both servers simultaneously. It now installs on the doc server by default, or on the preview server if the doc server is absent
+* Updated the Ansible playbook to install the carbonio-memcached package only on the first proxy, since memcached runs behind the service mesh and currently supports a single instance.
+
+### Bug Fixes
+* Removed message-dispatcher-migration steps (now handled by application)
+
+
+### [25.12.1] (2025-12-22)
+
+
+### Bug Fixes
+* Added one more pending-setups to finish WSC installation on Single Server
+
+
+### [25.12.0] (2025-11-18)
+
+
+### Features
+* Added `/etc/hosts` file check to ensure `localhost` is not defined in IPv6 section and no duplicate entries exist
+* Removed carbonio-admin-ui package from the list of Proxy packages
+
+
+### [25.9.2] (2025-11-10)
+
+
+### Bug Fixes
+* Added automated task to wait for Consul to be ready before running the db-connectors Bootstrap script.
+
+
+### [25.9.0] (2025-09-30)
+
+
+### Features
+* Removed config.ini fixes (config.ini is optional now)
+* Replaced deprecated Ansible module `postgresql_set` with `postgresql_alter_system` and deprecated alias `database` in PostgreSQL modules  (ensures forward compatibility with community.postgresql ≥ 5.0, removes deprecation warnings)
+* Updated collection dependency: now requires community.postgresql version 3.13.0 or higher, as newer module is used
+
+### Bug Fixes
+* Added automated task to install and enable the service-discover service (previously required manual configuration via +zimbraServiceInstalled/+zimbraServiceEnabled)
+
+
+### [25.6.1] (2025-09-16)
+
+
+### Bug Fixes
+* Made carbonio prov write values directly to LDAP without SOAP calls to the application server
 
 
 ### [25.6.0] (2025-05-16)

@@ -1,40 +1,43 @@
 [postgresServers]
-carbonio.afatyo.com
+
 [masterDirectoryServers]
-carbonio.afatyo.com
+
+#Custom Default Domain (Optional)
+[masterDirectoryServers:vars]
+# Replace domain.com with your desired domain
+#default_domain=domain.com
+
 [replicaDirectoryServers]
 
 [serviceDiscoverServers]
-carbonio.afatyo.com
+
 [dbsConnectorServers]
 
 [mtaServers]
-carbonio.afatyo.com
+
 [proxyServers]
-carbonio.afatyo.com
+
 [proxyServers:vars]
-webmailHostname=carbonio.afatyo.com
+#webmailHostname=webmailPublicHostname
 
 [applicationServers] 	
-carbonio.afatyo.com
+
 [filesServers]
-carbonio.afatyo.com
+
 [docsServers]
-carbonio.afatyo.com
+
 [taskServers]
-carbonio.afatyo.com
+
 [previewServers]
-carbonio.afatyo.com
+
 [videoServers]
-carbonio.afatyo.com public_ip_address=172.16.200.204
+#hostname public_ip_address=x.y.z.t
 
 [workStreamServers]
-carbonio.afatyo.com
-[prometheusServers]
-carbonio.afatyo.com
-[syslogServer]
-carbonio.afatyo.com
 
+[prometheusServers]
+
+[syslogServer]
 
 
 
