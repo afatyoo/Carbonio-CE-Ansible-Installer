@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2024 Zextras <https://www.zextras.com>
+# SPDX-FileCopyrightText: Zextras <https://www.zextras.com>
 #
 # SPDX-License-Identifier: GPL-3.0-only
 
 ---
-# vars file for install-carbonio-packages
+# vars file for install_carbonio_packages
 
-  appserver_packages: 
+  appserver_packages:
     - carbonio-appserver
-    # (hapus carbonio-zal, carbonio-advanced → gak ada di CE)
-  
-  carbonio_storages_packages: 
+    # (hapus carbonio-zal, carbonio-advanced -> gak ada di CE)
+
+  carbonio_storages_packages:
     - carbonio-storages-ce   # ganti dari carbonio-storages
 
   carbonio_user_management_packages: 
@@ -24,8 +24,14 @@
   docs_dbconnectors_packages: 
     - carbonio-docs-connector-db
 
+  preview_dbconnectors_packages:
+    - carbonio-preview-db
+
   task_dbconnectors_packages:
     - carbonio-tasks-db
+
+  videorecorder_dbconnectors_packages: []
+    # dihapus -> carbonio-videorecorder-db tidak ada di CE
 
   message_dispatcher_dbconnectors_packages:
     - carbonio-message-dispatcher-db
@@ -33,8 +39,8 @@
   ws_collaboration_dbconnectors_packages:
     - carbonio-ws-collaboration-db
 
-  notification_push_dbconnectors_packages:
-    # dihapus → tidak ada di CE
+  notification_push_dbconnectors_packages: []
+    # dihapus -> carbonio-notification-push-db tidak ada di CE
 
   postgres_packages_ubuntu: 
     - python3-psycopg2
@@ -47,23 +53,40 @@
   ds_packages: 
     - carbonio-directory-server
 
+  license_service_packages: []
+    # dihapus -> carbonio-license-service tidak ada di CE
+
+  memcached_packages:
+    - carbonio-memcached
+
   mta_packages: 
     - carbonio-mta
     
   proxy_packages: 
     - carbonio-catalog
     - carbonio-proxy
-    - carbonio-webui
-    # (hapus carbonio-admin-ui, carbonio-admin-console-ui, carbonio-avdb-updater → gak ada di CE)
+    - carbonio-admin-console-ui
+    - carbonio-admin-login-ui
+    - carbonio-auth-ui
+    - carbonio-calendars-ui
+    - carbonio-contacts-ui
+    - carbonio-login-ui
+    - carbonio-mails-ui
+    - carbonio-search-ui
+    - carbonio-shell-ui
+    # (hapus carbonio-avdb-updater -> gak ada di CE)
 
-  preview_packages: 
+  preview_packages:
     - carbonio-preview-ce   # ganti dari carbonio-preview
+
+  preview_dependencies_packages:
+    - carbonio-docs-editor
 
   task_packages:
     - carbonio-tasks-ce     # ganti dari carbonio-tasks
-    
-  files_packages: 
-    - carbonio-files-ce     # ganti dari carbonio-files  
+
+  files_packages:
+    - carbonio-files-ce     # ganti dari carbonio-files
     
   files_ui_packages: 
     - carbonio-files-public-folder-ui
@@ -75,11 +98,14 @@
   ws_ui_packages:
     - carbonio-ws-collaboration-ui
 
-  docs_packages: 
-    - carbonio-docs-editor
+  storage_ui_packages:
+    - carbonio-storages-ui
+
+  docs_packages:
     - carbonio-docs-connector-ce   # ganti dari carbonio-docs-connector
-  
-  videoserver_packages: 
+    - carbonio-docs-editor
+
+  videoserver_packages:
     - carbonio-videoserver-ce      # ganti dari carbonio-videoserver-advanced, hapus carbonio-videorecorder
 
   workstream_packages:
@@ -88,14 +114,8 @@
   message_dispatcher_packages:
     - carbonio-message-dispatcher-ce # ganti dari carbonio-message-dispatcher
 
-  notification_push_packages:
-    # dihapus → tidak ada di CE
-
-  postgres_clent_package_ubuntu:
-    - postgresql-client-16
-
-  postgres_clent_package_rhel:
-    - postgresql16
+  notification_push_packages: []
+    # dihapus -> carbonio-notification-push / carbonio-push-connector tidak ada di CE
 
   sda_packages: 
     - service-discover-agent    

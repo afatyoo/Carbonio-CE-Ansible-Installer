@@ -1,58 +1,142 @@
-# SPDX-FileCopyrightText: 2024 Zextras <https://www.zextras.com>
+# SPDX-FileCopyrightText: Zextras <https://www.zextras.com>
 #
 # SPDX-License-Identifier: GPL-3.0-only
 
 ---
-- hosts: all
+- name: Confirm Carbonio installation
+  hosts: all
   order: inventory
-  gather_facts: yes
+  gather_facts: false
+  any_errors_fatal: true
   roles:
-     - ../roles/pre_installation_checks
-     - ../roles/prepare_carbonio_vms
-     - ../roles/install_carbonio_packages
+    - ../roles/confirm_installation
 
-- hosts: masterDirectoryServers, replicaDirectoryServers, postgresServers
+- name: Prepare Ansible controller
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  roles:
+    - ../roles/prepare_ansible_controller
+    
+- name: Validate hosts and install Carbonio packages
+  hosts: all
+  order: inventory
+  gather_facts: true
+  roles:
+    - ../roles/pre_installation_checks
+    - ../roles/prepare_carbonio_vms
+    - ../roles/install_carbonio_packages
+
+- name: Bootstrap primary cluster services
+  hosts: masterDirectoryServers, replicaDirectoryServers, postgresServers
   serial: 1
   order: inventory
-  gather_facts: yes
+  gather_facts: true
   roles:
-     - ../roles/bootstrap_cluster_services
+    - ../roles/bootstrap_cluster_services
 
-- hosts: all, !postgresServers, !masterDirectoryServers, !replicaDirectoryServers
+- name: Bootstrap remaining cluster services
+  hosts: all, !postgresServers, !masterDirectoryServers, !replicaDirectoryServers
   serial: 1
   order: inventory
-  gather_facts: yes
+  gather_facts: true
   roles:
-     - ../roles/bootstrap_cluster_services
+    - ../roles/bootstrap_cluster_services
 
-- hosts: masterDirectoryServers, replicaDirectoryServers, postgresServers
+- name: Configure primary Carbonio cluster servers
+  hosts: masterDirectoryServers, replicaDirectoryServers, postgresServers
   order: inventory
-  gather_facts: yes
+  gather_facts: true
   roles:
-     - ../roles/bootstrap_carbonio
-     - ../roles/execute_final_setups
+    - ../roles/bootstrap_carbonio
+    - ../roles/execute_final_setups
 
-- hosts: all, !postgresServers, !masterDirectoryServers, !replicaDirectoryServers, !videoServers
+- name: Configure remaining Carbonio servers (except video servers)
+  hosts: all, !postgresServers, !masterDirectoryServers, !replicaDirectoryServers, !videoServers
   order: inventory
-  gather_facts: yes
+  gather_facts: true
   roles:
-     - ../roles/bootstrap_carbonio
-     - ../roles/execute_final_setups
+    - ../roles/bootstrap_carbonio
+    - ../roles/execute_final_setups
 
-- hosts: videoServers
+- name: Configure video servers
+  hosts: videoServers
   serial: 1
   order: inventory
-  gather_facts: yes
+  gather_facts: true
   roles:
-     - ../roles/bootstrap_carbonio
-     - ../roles/execute_final_setups
+    - ../roles/bootstrap_carbonio
+    - ../roles/execute_final_setups
 
-- hosts: all
+- name: Update Carbonio authentication keys
+  hosts: all
   order: inventory
-  gather_facts: yes
-  tasks: 
+  gather_facts: false
+  tasks:
     - name: Update auth keys
       become: true
       become_method: su
       become_user: zextras
-      command: '/opt/zextras/bin/zmupdateauthkeys'
+      ansible.builtin.command: '/opt/zextras/bin/zmupdateauthkeys'
+
+- name: Apply single-server optimizations
+  hosts: all
+  order: inventory
+  gather_facts: true
+  tasks:
+    - name: Confirm single-server optimization
+      ansible.builtin.pause:
+        prompt: |
+          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          CONFIRMATION: SINGLE-SERVER OPTIMIZATION
+          
+          You are about to apply Single-Server specific settings.
+          
+          WARNING: After these optimizations are applied, it will 
+          be IMPOSSIBLE to scale this infrastructure out to a 
+          multi-server in the future.
+          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+          Type 'YES' to apply optimizations, or press ENTER to skip:
+      register: ss_final_confirm
+      when:
+        - groups['all'] | length == 1
+        - autoapply_ss_optimization | default('') | lower not in ['true', 'false']
+
+    - name: Auto-apply Single-Server Optimization
+      ansible.builtin.set_fact:
+        ss_final_confirm:
+          user_input: 'YES'
+      when:
+        - groups['all'] | length == 1
+        - autoapply_ss_optimization | default('') | lower in ['true']
+
+    - name: Store single-server optimization marker
+      become: true
+      become_method: su
+      become_user: zextras
+      ansible.builtin.command: /opt/zextras/bin/zmlocalconfig -e carbonio_ss_optimized=true
+      when:
+        - groups['all'] | length == 1
+        - ss_final_confirm.user_input | default('') | upper == 'YES'
+
+    - name: Auto-skip Single-Server Optimization
+      ansible.builtin.set_fact:
+        ss_final_confirm:
+          user_input: ''
+      when:
+        - groups['all'] | length == 1
+        - autoapply_ss_optimization | default('') | lower in ['false']
+
+    - name: Display optimization skipped message
+      ansible.builtin.debug:
+        msg: "Optimization skipped. Single-server installation completed successfully without optimization."
+      when:
+        - groups['all'] | length == 1
+        - (ss_final_confirm.user_input | default('') | upper) != 'YES'
+
+    - name: Include single-server setup role
+      ansible.builtin.include_role:
+        name: ../roles/single_server_setup
+      when:
+        - groups['all'] | length == 1
+        - (ss_final_confirm.user_input | default('') | upper) == 'YES'

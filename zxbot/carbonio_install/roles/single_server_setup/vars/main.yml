@@ -1,0 +1,4 @@
+---
+# vars file for single_server_setup
+postgresql_service_name: postgresql
+rhel_postgresql_service_name: postgresql-16

@@ -8,682 +8,17 @@
    "format": 1
   },
   {
-   "name": "meta",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "meta/runtime.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "3a09f45d698e12118cfdc5fb302b2f996e76951dd3bd02ba78c119eeda5334fd",
-   "format": 1
-  },
-  {
-   "name": "roles",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/chk_carbonio_upgrade",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/chk_carbonio_upgrade/vars",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/chk_carbonio_upgrade/vars/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "ae5c8e7faf1b2778f3559ef554bc4aa9d77fa401e257ac1ac2ff65b181a4fc2c",
-   "format": 1
-  },
-  {
-   "name": "roles/chk_carbonio_upgrade/meta",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/chk_carbonio_upgrade/meta/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "f18b402bdfce7a535b3346fedd65c357eb13763a9bf7254da470298fc4e58416",
-   "format": 1
-  },
-  {
-   "name": "roles/chk_carbonio_upgrade/README.md",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "cc751d75266f757a38189f15d54e548dc87706f14a39756995c27b49eaca8a07",
-   "format": 1
-  },
-  {
-   "name": "roles/chk_carbonio_upgrade/tasks",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/chk_carbonio_upgrade/tasks/check-upgrade.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "027212df21270ad2aaa5ae1296871e4939da4a7734d27e492f976bbfc3ee9830",
-   "format": 1
-  },
-  {
-   "name": "roles/chk_carbonio_upgrade/tasks/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "47f2d8fee59bb2274823dfb3d08b1b4107d21642f9a737e800dd9108d5fceb2e",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/vars",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/vars/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "d6ced2f5bfd7a2eb55ba52a50609adae7f6bb598229855529fda8139fab47f3c",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/files",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/files/apply-pending-setups.sh",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "e9d6c0d623e7d2b2abaf81c5a92a04adff4c4c4be9d285b6a594fd8b129745ba",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/meta",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/meta/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "e82c60136cb1895d61432dd52c83d4c6e8ad4c654a697ac2d5b5e4a288866d87",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/README.md",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "cc751d75266f757a38189f15d54e548dc87706f14a39756995c27b49eaca8a07",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/handlers",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/handlers/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "3f57c76b418b801b0b49a6e5391a19a79ca0c68bc5df5c613fcb86b08f317d27",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/defaults",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/defaults/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "faaaaba9343b9930b357cad9566614a5362e390f209712a0c0a52097995cc7e4",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/tasks",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/tasks/install-db-connectors.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "fc6e1342876ed134bab3e1432d6e01bfea6c179e34be8e81d052c48660d784fd",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/tasks/install-new-proxy-packages.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "a7fe0680e9b2b6973ae6b09a8cc55f8b2b62fe5f68e488d5fb620d3e0d6b2a86",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/tasks/install-carbonio-user-management.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "66a31f06193ac20aaba7345ee5f105e9e51bd4edd5f5df350eb5db196e456a1e",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/tasks/install-carbonio-catalog.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "1eeb97f5d5e4e65dce5ad7735aaaaf8e7f858c33a1cfe5c1be4f160d3cc00898",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/tasks/install-carbonio-storages.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "a7f97eef16e080bfd3aaf717e5fbfff5d408560be31e5a2d7861fcd960a92d6b",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/tasks/install-carbonio-message-broker.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "7193378b3dce7e6a75d09f0f02df859093a5e9ecdf6ab6b5dc7b43ff160d7ab9",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/tasks/install-carbonio-notification-push.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "1a1bbac52e29adcdcc1008c88937420254ca840251478db85ab2d73b4b433b28",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/tasks/install-carbonio-syslog.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "d1438464f530730f6064b017296988fa34f765fde9da21e91adb8f475d8802df",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/tasks/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "221b9856fdd105aaa0bcf73e10f241367221f63e488bcd78775d81ba97245329",
-   "format": 1
-  },
-  {
-   "name": "roles/install_new_packages/tasks/remove-unneeded-packages.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "74d209aadab556f97210bf0085069fc6e820d6e1eb84fe88b66f28c67c9acc73",
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/vars",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/vars/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "93b204b5a5e40657801a39ad6eebd75d5befd5018efb08d4997279fd8e3d26e3",
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/meta",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/meta/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "9065423f18ec89bf4f63afe3da59a95a831f79da71517bbc65809601128e7465",
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/tests",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/tests/test.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "a5927a91427b833fc1a393baf3f2c4a085a2931691a31c82ce23ecc32c452aaa",
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/tests/inventory",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "e02233819b1a09844410549191813f7cc7ba360f21298578f4ba1727a27d87fc",
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/README.md",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "cc751d75266f757a38189f15d54e548dc87706f14a39756995c27b49eaca8a07",
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/handlers",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/handlers/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "a37710873c00ccf3a89983282b1160636775b4d1276b996b9c05a469aff0e252",
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/defaults",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/defaults/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "f8b13530fec5261ac3e3035b2df2a3093dff9a0bcd42c2f863d9b452508462eb",
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/tasks",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/tasks/upgrade-carbonio.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "abfc116e0940df69592f82c9f8a5747cd171f924c3967d50cee70babc4125d5f",
-   "format": 1
-  },
-  {
-   "name": "roles/upgrade_carbonio_packages/tasks/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "6e3221b1551bd0f2aa2a9389d63a8b017235ddf0d9cb914aeb5bfde72abe8c97",
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/vars",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/vars/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "e13dd1afd0ac564f43b9c42676b121bada6d9043e79b28bd2122dc6b02ea2eac",
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/meta",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/meta/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "db89ebcde77c92a6378e501eb4df7ea6801130a7431bfff61fdf1a23f577f979",
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/tests",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/tests/test.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "a0c6685b3f3ee5eb6bc9a86891340727a25eeb40cd14ac8b5b34d2efb2b77230",
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/tests/inventory",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "e02233819b1a09844410549191813f7cc7ba360f21298578f4ba1727a27d87fc",
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/README.md",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "cc751d75266f757a38189f15d54e548dc87706f14a39756995c27b49eaca8a07",
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/handlers",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/handlers/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "6ece516111b74ef771821c138e928343c7882706f101faba73eca67a390cc8a4",
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/defaults",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/defaults/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "e8b6d36bbe7d5e7a8b27b0bf4283861bda6626bbf8c33e8c9c8b537eb4b1d4b8",
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/tasks",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/tasks/workstreamservers_check.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "a98e15fc5fffb85cae3889b59326d338567ca1ef2188a28c99905a3a44c0344e",
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/tasks/pre-upgrade-cmds.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "b31548b9cab03caddc97eae829ccedc6fe8551e94ec9fe34ff06866d2845c823",
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/tasks/password-checks.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "e36d2f2bb7d91f3925e0f7980ad283a81f1182a21a56531ee8f1e299caf1c2b2",
-   "format": 1
-  },
-  {
-   "name": "roles/pre_carbonio_upgrade/tasks/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "c4f31735b37af4e70c030a799a97c60b3e2b6f8245cd113adce69fb7cdd80ec3",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/vars",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/vars/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "07f11f374b4c912c55bf7e8675a931cd800948fafa01e1ee747eb8458b53eef4",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/files",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/files/apply-pending-setups.sh",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "a83d0dc53561eccd9906efba95d38ef90f5ff8222661ace742d99e9938f6f167",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/meta",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/meta/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "037ff7d625ad382201f9b65a8c03fade3244b4b2f541d713835c13df84844fc6",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/tests",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/tests/test.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "3b5987e9810eb185a569d27d53d922a030cf5d66320e23ccba5abc8f13ad9a69",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/tests/inventory",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "e02233819b1a09844410549191813f7cc7ba360f21298578f4ba1727a27d87fc",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/README.md",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "cc751d75266f757a38189f15d54e548dc87706f14a39756995c27b49eaca8a07",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/handlers",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/handlers/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "556aaa13accd34d41472b00ed3bd928c2b13c01aa574d40b5a5270ea1328389d",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/defaults",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/defaults/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "b11700b1edd5c77f8f8131d57a6704091111d96a43a7bf023da467fdff57589e",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/tasks",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/tasks/execute-carbonio-pending-setups.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "12227eafff059e1016ddca37f70527d6e49ad3f8b113906a6e14fc3aed70875a",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/tasks/execute-dbconnectors-bootstrap.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "7363c8a53374e3941dcd7c51666dbcdd6b763971b8ba4d15ef9d08dfabdfdb14",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/tasks/main.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "42ddab722650f9df3986ff87799bb653acca44cde6ca359aeccceed03ae8e9cd",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/tasks/restart-carbonio-services.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "21e02dcedf45e3f6658dbc48dfa37200e42873fb68f2de235dfe2579f4a7646c",
-   "format": 1
-  },
-  {
-   "name": "roles/post_carbonio_packages_upgrade/tasks/remove-unused-dependencies.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "506b01920d008b263f12ecc62a0f5f4c1c65db1a138b526bdcc0cd5cc65c908b",
-   "format": 1
-  },
-  {
-   "name": "CHANGELOG.md",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "d025c213029fe7d4ac4125e6099484ab546142cbb62c9bc38fca95dd9386b15a",
-   "format": 1
-  },
-  {
-   "name": "playbooks",
-   "ftype": "dir",
-   "chksum_type": null,
-   "chksum_sha256": null,
-   "format": 1
-  },
-  {
-   "name": "playbooks/carbonio_upgrade.yml",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "4df462110bde86c82bc301aba312b8c55a8af043e7806c160036e428f3012a04",
-   "format": 1
-  },
-  {
-   "name": "inventoryname_postgrespassword",
+   "name": "inventoryname_ldap_password",
    "ftype": "file",
    "chksum_type": "sha256",
    "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
    "format": 1
   },
   {
-   "name": "README.md",
+   "name": "requirements.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "430a6f8865751550a1fd3467abdb2a5e24642d38970f23c8563e5f0386115a9e",
-   "format": 1
-  },
-  {
-   "name": "COPYING.md",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "585e25ef8f5946a52bf2aed68d5becfc38be94a8663aa01c1b31d88aa57f1de3",
-   "format": 1
-  },
-  {
-   "name": "inventoryname",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "6dcdea586037d01c9d15cd557589b1f6ab08e82c41104597b2570dfd4160b258",
+   "chksum_sha256": "273cb84789b90d9bab823f26b98039a6d561a0fb3636ce94be91b623c5dc04e0",
    "format": 1
   },
   {
@@ -701,6 +36,34 @@
    "format": 1
   },
   {
+   "name": ".github/renovate.json",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e1f97bd8f65b3c72b51f9b9b117179d6a67f0224bcc78ff722cdfa9123db1cbe",
+   "format": 1
+  },
+  {
+   "name": "CHANGELOG.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc4c74364c9e19a9876dc8e3f5f6f0b8a930767140dc9bda8babec52090857d",
+   "format": 1
+  },
+  {
+   "name": "inventoryname",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c33d15658b7d74a0721ba40ca6b0497d93c935935caad5727f9a0168c10c04c4",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "00e409a50d7bce740be53090e9752d22859f896204ec78a4edb82279dfb6af2b",
+   "format": 1
+  },
+  {
    "name": "inventoryname_consulpassword",
    "ftype": "file",
    "chksum_type": "sha256",
@@ -708,17 +71,983 @@
    "format": 1
   },
   {
-   "name": "Jenkinsfile",
-   "ftype": "file",
-   "chksum_type": "sha256",
-   "chksum_sha256": "1ace564a70d376cbe1fe2204eac029d2718f0f243316c1eacb8265c26bd91b9f",
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
    "format": 1
   },
   {
-   "name": "inventoryname_ldap_password",
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4bbc1bc94f8d989ff0eb57b46db80233df563012fd1dd310e0281a97589ba6e0",
+   "format": 1
+  },
+  {
+   "name": "COPYING.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "585e25ef8f5946a52bf2aed68d5becfc38be94a8663aa01c1b31d88aa57f1de3",
+   "format": 1
+  },
+  {
+   "name": "inventoryname_postgrespassword",
    "ftype": "file",
    "chksum_type": "sha256",
    "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "roles",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/tasks/ensure_python_dependencies.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d8793f6e7526d3f2e0ff0bf537256f5d152b271c8eabe995eab935bdc76bc55",
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "be406f0dd8c2e98cfa51db046ac6e490ed539ffcb4583f6af2c2db7dafe94adb",
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "27b6b3bfbf5a6e808bb3ff9c49eab4b24d9292c5b90701ba0d1f71f5bef75d5f",
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/tests/test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "436bdbcb5d5a69314183dedaca653fc0e46006b8a0998e2e864a52b2a0634750",
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/tests/inventory",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e02233819b1a09844410549191813f7cc7ba360f21298578f4ba1727a27d87fc",
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d8281b640cae3ed55aebfacf151fc776393fa6dd0bfc9baf114a970d3149c88c",
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "af7a8723981999636d6c04f0187a3623739842727a2fd448b119c986aa187ce2",
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "12e514cfea871f92498555fa1700faf7be28c920294c4942e99b2f279286fd84",
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/prepare_ansible_controller/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "493ae326dc18daad6ce0b369d80382cd67c81b7932ae3caef961d52a34cafbcf",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/tasks/check_playbook_metadata.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3f548686641ff1422fce3de8c0b12993a66a2a99eb156dd87d53a76d30cdc55c",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5d08200ceb9bc315e3561ee1ca0812cca1f61f29bb755443c26bd7ef4ee19f72",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/tasks/check_carbonio_repositories.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e04161782aa508748ca282393035724bfb0f4fee7f6a41949b7e39b2e1699f51",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/tasks/confirm_carbonio_license.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a55038e589243ad9c74d260739e388ddef01ed447f6e74fb0b0eed0381fa21d5",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/tasks/confirm_repository_and_playbook.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "35a75df993996476e83365ca211e355d983cab1a9b538b03e55b5a5c022342bc",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e2f4d11cd3b4dbf65440e09bfe081d28304ec15016037270575dc1b83dc7fd92",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/tests/test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9031fd4b88ad3acd5f5e52a8e0cd5801d702c44cb94caf96f9eff1f35356887d",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/tests/inventory",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ff94a2f3ae5fa1b8dd2993ebf452fc0aa234e3b1e8260479e436ec456310557",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a82511cf9f0c2c79410ad3bd1a3c9b7f61f30d31ee90c7f4894d3f2b0eb50953",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "586bf67bd42de32c65434e0f56f165d20af6690f5e539f3dfd2f338ffdf3ab37",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88d0fbc0978342759eac2d1b9beba62e2c917492768d18c9e0b8e5a645f1357e",
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/confirm_upgrade/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "751f26aa3b6969876c1b0652ac45dc914d2e246e8c42402bfafd4416129438f2",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "21fe323efef87f80f8a61df5c9c002f4cd0e3681b515a1bf16d318c03dbe446e",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tasks/optimize_ss_services.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "68c726b7a72892bea3ad59492a33ec54a29c7e329ebfaf65233de381f9d21d18",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tasks/execute_config_fixes.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2920f02de347b7577616bdf2180580c6610ceb8ca17b4e8d165da8045bfd1054",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tasks/execute_dbconnectors_bootstrap.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7cf2b1e4b537faca32bcb520346c77c77238a25031e723ebe64eaf9a1b6e63a7",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tasks/restart_carbonio_services.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2e8b932d8856c1b82212feb3195f539a64f5e08d955dd0ce592c5916b650eecb",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tasks/fix_ss_optimization.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6cd4a04786fe97bd9d2acb696ca094a6f1124878ace9fa210983aec3b2ab8ad3",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tasks/execute_carbonio_pending_setups.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c7da4d80b600a3504aecb524ea875b3db28d844092829c21251c4c99f098299",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tasks/remove_unused_dependencies.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e68acad57be4dfc35a2d466d95b301d7fc4e8bc34545005b384b2f1184372699",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6a4b76707ef2c958393e356804a804367db83895251dbb25448a77b2438b2a00",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tests/test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "da2f9df6f1987df670f32bccb1da9c792fa0f42f072f5b1ea13284bd559388f4",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/tests/inventory",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e02233819b1a09844410549191813f7cc7ba360f21298578f4ba1727a27d87fc",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "abe75e7b332fb68a67ee7aa4ea763acfec9f08f70c12f0f2cb839f7f585caa1d",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "15dd3188af79add06e96ea846334c2324772dba8b775414247d9e62c4ce2262b",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/files/apply-pending-setups.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a83d0dc53561eccd9906efba95d38ef90f5ff8222661ace742d99e9938f6f167",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/templates",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/templates/avdb-updater-config.properties.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3dc1c68f92870ee9d8d5f71e135203e9cb26965e619cd8dce087a35b54768c88",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "05e99f62976fc9e3c3f778cc28d65c36cc17be0a4e69df3f1ecdee70d23daf81",
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/post_carbonio_packages_upgrade/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "34b4e4bf075b566d070a97de49b59406824ff8f13d380af274a65f3c6bfabd52",
+   "format": 1
+  },
+  {
+   "name": "roles/chk_carbonio_upgrade",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/chk_carbonio_upgrade/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/chk_carbonio_upgrade/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4b65413548be54399b7bd6adec3ca6d2891581391ba397de6fcae64cf1e057e4",
+   "format": 1
+  },
+  {
+   "name": "roles/chk_carbonio_upgrade/tasks/verify_carbonio_upgrade.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d34ef8abb266b89b494c81461e12cc27faa488a6bcfa6e30dd17fb3c68f84e71",
+   "format": 1
+  },
+  {
+   "name": "roles/chk_carbonio_upgrade/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/chk_carbonio_upgrade/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc138993a78c7f554ba43851b0ce03a20f7cc18646c50ef3afe3a0f91972bdae",
+   "format": 1
+  },
+  {
+   "name": "roles/chk_carbonio_upgrade/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "310b8fdf15d646cb3a20dc8662bf5fe6985354e3587b5e8bd85cefbc82544e26",
+   "format": 1
+  },
+  {
+   "name": "roles/chk_carbonio_upgrade/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/chk_carbonio_upgrade/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f29d15e22eaad9707a974081a7664f92469f6625f9293ed6cd75635489b40849",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "abbd79e20b050ae9a3c87dd77af7fd40926f4670e78e61522923f0d2a37c971b",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tasks/validate_rsyslog_config.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e1d686fbf800897228a68aa7e38bdbaa7bc8bcbd5204729883be0905013fd3a7",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tasks/validate_password_files.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8380058f493c8321ba013e54036034f342673c6b0c764c65b27e3b4259d88201",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tasks/configure_syslog_aggregator.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e5f3022851db490cdff0cdd7853c26bf734c7854b4635ee5c37d5e3c4d3c2413",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tasks/detect_single_server_optimization.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a01db12fb4677fc029134fbbb1d2db2c8b7450d2e7e86e77cbf3a542432466a9",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tasks/validate_inventory_chats.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80249353e6f1b24704285574ee18c40c6f65e4a325c9aac746382a1d3cbceffd",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tasks/create_pre_upgrade_backups.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aa88e8d98774c008d6767d8ee6ed16cd2b10fb591dac7c1b72b7e8f157375174",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tasks/validate_inventory_values.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "086d4ffe74eab933257066df6a2a0cd6ff1593abc70a35f3369876cd749a1b00",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "952b712c23b3964b26bd35c201405221cae9fe0be67988a78fd1b0f03e216341",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tests/test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ab2160e222cb9babbe9f828a59982508d947afb4f8b7f1ec0fb2bc915d00aa88",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/tests/inventory",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e02233819b1a09844410549191813f7cc7ba360f21298578f4ba1727a27d87fc",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3933584ae9582a85779c80b4bdefbd613165c7c31feecb8bfc082cc36dcd830b",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e56270f768edfe81c6f59199f08ed6ad707fd0832faa285ccfe945dbd094b061",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a977ca5b1df50b09badc3c62c43894df3b81293257a148b68b78435a4f3d41e5",
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/pre_carbonio_upgrade/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "48c67529afd34718425f102a4f3712f0f3b696fadeb2737a0ef0a43dd84badfe",
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "34a0ef52be44bf0c851bb34430ec55fb9002a74139f32f45a871590af471405e",
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/tasks/upgrade_carbonio.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e678bb3e5afb2d69edfe1459ee2630ca444bf73aaca935e83a6a7ecb3903949b",
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6f800abc0ef36698b1a82d7111463375c02db3b15858f67c44c9b88f1d994fd1",
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/tests/test.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9da5d9a00436d17aa1393c5e82a87c03afa78da4b2586f914aaa7fffd8540b55",
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/tests/inventory",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e02233819b1a09844410549191813f7cc7ba360f21298578f4ba1727a27d87fc",
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "db2a63d9bcb72e0d72ed862cdfa7c3c63ce42ec6074b67adc72fb9a5971dd33f",
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1773837fe973c5e73216769d58d9a67b3f0f8faa55b131358016c97d95786c0e",
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79a2d13e51fccf39f856de9503f5bb755d7ccc465ae29e7f64ef5b8899517fa9",
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/upgrade_carbonio_packages/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9d2116a786bdda4255d03a0088fb893bcd9b7b4e5ed718a8bc4b488d28c8ef54",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks/install_new_proxy_packages.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a21e9d8c44ec3972d0b308140b3e5b51bc27eafeb74a1f4b9919804e91c7c395",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks/install_carbonio_catalog.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8c53c4e82c4918a3d53eb08ec26930a47b6be2461756123e45ce2e82f977a3d",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3dcae2680de7dd1e0a7510786ce1d9b94f871550451243dcf8bd6eefc38ddd1e",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks/install_carbonio_syslog.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ad3770bc538e4df27893e8dbf21682c0f5fdb2f4624986cdf0ce200471d7bb18",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks/install_carbonio_memcached.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "220b62a48f21a402281b322bbf02fbfd3016bd138cc5add8b3ee102a7ff8a9c4",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks/install_carbonio_storages.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2a28cb0dadfd5adf025a7882146f2245b0dfa4ed8bb63f842bf0bb0586656e58",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks/install_db_connectors.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2d6ea1e3cd7c642c1b57658962f90b16f0c8508e20bc1ff0780d9224aedb4cb4",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks/install_carbonio_message_broker.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e94ac439ace46275f0574b7df4542a2f82e689f2096266907d90c6d6c89b784c",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks/install_carbonio_user_management.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dee6949d3bc9731b9af0f71e35737f907dbf409270b3c34da2019820948102de",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks/install_carbonio_notification_push.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0571ce76bc0d4bc12ce5dff7a7b7ddf60c267f1400204456f9f4255ff9666785",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/tasks/install_carbonio_license_service.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "68321cdd1ecbbee15988a9d137edef5c91dc5fcbb7cea730f6ac60e91a6d394f",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/vars",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/vars/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a06169f9b1cc16b1901fbd52901a6a32811b1668378101ec1b75102c36b4e581",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "faaaaba9343b9930b357cad9566614a5362e390f209712a0c0a52097995cc7e4",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/handlers",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/handlers/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3f57c76b418b801b0b49a6e5391a19a79ca0c68bc5df5c613fcb86b08f317d27",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/files",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/files/apply-pending-setups.sh",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7f4b5e2cacfc41bec87e914b7ea709b8653da1f98256786d32ce92ae82851759",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "144089c6f222226c2cafdd533144307b97b219d5b4e1edaed29ae772e95b0f9e",
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "roles/install_new_packages/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e82c60136cb1895d61432dd52c83d4c6e8ad4c654a697ac2d5b5e4a288866d87",
+   "format": 1
+  },
+  {
+   "name": "Jenkinsfile",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "83da8343fbe017c8a582ffb84f465251058bc23727d779251f605438d05bdef6",
+   "format": 1
+  },
+  {
+   "name": "playbooks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "playbooks/carbonio_upgrade.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1bc1997e5eceb8612309257c42cec11be8acaade25c15e172d94dc4a357ab7ed",
    "format": 1
   }
  ],
